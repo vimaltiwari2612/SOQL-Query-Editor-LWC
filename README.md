@@ -17,4 +17,6 @@ A Developer console like query editor for search, delete, update records of any 
 
 # future scope
 
-Adding new records from screen dynamically.
+- Adding new records from screen dynamically.
+- parent relationship queries
+- child queries
