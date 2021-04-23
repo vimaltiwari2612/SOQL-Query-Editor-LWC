@@ -9,8 +9,10 @@ A Developer console like query editor for search, delete, update records of any 
 - updation of multiple records
 
 # Screenshot
+![screenshot](https://github.com/vimaltiwari2612/SOQL-Query-Editor-LWC/blob/main/1.PNG)
+![screenshot](https://github.com/vimaltiwari2612/SOQL-Query-Editor-LWC/blob/main/2.PNG)
 
-# Demo
+# [Download Demo](https://github.com/vimaltiwari2612/SOQL-Query-Editor-LWC/blob/main/demo.mp4?raw=true)
 
 
 # future scope
