@@ -1,0 +1,35 @@
+<template>
+  <template if:true={showSpinner}>
+        <lightning-spinner alternative-text="Loading..." size="large"></lightning-spinner>
+        </template>
+  <div class="slds-card">
+    <div class="slds-form-element">
+        <label class="slds-form-element__label" for="textarea-id-01">SOQL Query</label>
+    </br>
+        <div class="slds-form-element__control">
+          <lightning-textarea name="query" value={query} onchange={changeQuery} placeholder="type here..."></lightning-textarea>
+        </div>
+      </div>
+    </br>
+      <lightning-button variant="Neutral" icon-name="utility:search" label="Search" name="Search" onclick={search} >Search</lightning-button>
+      <lightning-button variant="Neutral" icon-name="utility:delete" label="Delete" name="Delete" onclick={deleteRecords} >Delete</lightning-button>
+      <lightning-button variant="Neutral" icon-name="utility:save" label="Save" name="Save" onclick={updateRecords} >Save</lightning-button>
+    </br>
+    <template if:false={showSpinner}>  
+      <div class="slds-card" style ="height:500px;">
+        <label class="slds-form-element__label" for="textarea-id-01">Query Results - Total Rows {count}</label>
+          <lightning-datatable 
+                  key-field="Id" 
+                  columns={columns} 
+                  onchange={handleChange}
+                  show-row-number-column="true"
+                  onrowselection={handleSelection}
+                  data={dataList}
+                  draft-values={draftValues}
+                  onsave={handleSave}></lightning-datatable>
+      </div>
+  </template>
+    </div>
+      
+        
+</template>
