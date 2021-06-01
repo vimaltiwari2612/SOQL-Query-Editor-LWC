@@ -22,4 +22,9 @@ A Developer console like query editor for search, delete, update records of any 
 - parent relationship queries
 - child queries
 
+# Dynamic SOSL Search Component
+  Added Dynamic SOSL search compoent Through LWC. Check it out [here](https://github.com/vimaltiwari2612/SOQL-Query-Editor-LWC/tree/main/LWC%20Dynamic%20SOSL%20Search)
+ ![image](https://user-images.githubusercontent.com/22127564/120327283-349fb000-c307-11eb-8728-ba4b434bbec1.png)
+
+
 HAPPY CODING!!
