@@ -1,0 +1,18 @@
+<template>
+  
+    <lightning-input id="inputBox" label="Search" name="Search" value={searchQuery} onchange={inputChange}></lightning-input>
+    <lightning-button id="lButton" label="Search" name ="Search" onclick={handleClick}></lightning-button>
+    <br/>
+    <template if:true={showResults}>
+        <template for:each={searchResults} for:item="result">
+          <lightning-card title={result.objectName} key={result.objectName}>
+            <template for:each={result.records} for:item="record">
+                <p key={record.Id}>{record.Name}</p>
+            </template>
+          </lightning-card>
+         
+        </template>
+     
+    </template> 
+   
+</template>
